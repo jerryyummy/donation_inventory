@@ -28,7 +28,7 @@ public class DonationManagementSystem {
         }
 
         for (Distribution distribution : distributions) {
-            inventory.put(distribution.type, inventory.getOrDefault(distribution.type, 0) - distribution.amount);
+            inventory.put(distribution.category, inventory.getOrDefault(distribution.category, 0) - distribution.amount);
         }
 
         for (Map.Entry<String, Integer> entry : inventory.entrySet()) {

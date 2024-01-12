@@ -3,7 +3,7 @@ package org.example;
 import java.util.Date;
 
 public class Record {
-    String name;
+    String name;//donor
     String category;
     int amount;
     Date date;
